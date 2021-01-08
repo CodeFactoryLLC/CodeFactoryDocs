@@ -1,37 +1,37 @@
 # Creating a CodeFactory Project
 This section will get you started in understanding how to use the CodeFactory SDK.
- In this walk through we will focus on the following.
+ In this walk-through we will focus on the following:
 
  - How to create a CodeFactory project
- - Understanding how nuget packages are loaded for CodeFactory
+ - Understanding how NuGet packages are loaded for CodeFactory
  - How to create a CodeFactory command
  - How to format a CodeFactory command
  - How to consume data from the CodeFactory Framework
- - How to create a user interface and display data from CodeFactory
+ - How to create a user interface and display data using CodeFactory
 
-The following is expected to have been completed before beginning this guidance.
+The following is expected to have been completed before beginning this section of guidance.
  
  - You are using Visual Studio 2019 on Windows (Visual Studio on Mac is not supported)
  - You have installed CodeFactory for Visual Studio and have activated CodeFactory.
- - YOu have installed the CodeFactory SDK
+ - You have installed the CodeFactory SDK
 
-The walk through will be broken down into logical exercises that cover each of the above goals of this gudiance.
+The walk-through will be grouped in a series of logical exercises that cover each of the above goals of this guidance.
 
-## Part One Creating a Project
+## Part One - Creating a Project
 In the first part of the guidance we will create a project and get it ready to build automation. 
 
-This will focus on the following
+This will focus on the following:
  - How to create a CodeFactory project
- - Understanding how nuget packages are loaded for CodeFactory
+ - Understanding how NuGet packages are loaded for CodeFactory
  - How to create a CodeFactory command
 
 [Create a CodeFactory Project](CreateProject.md)
 
-## Part Two Automate Project Information
-In the second part we will gather information about a visual studio project and displaying it to the user in Visual Studio.
+## Part Two - Automate Project Information
+In the second part we will gather information about a Visual Studio project and displaying it to the user in Visual Studio.
 
-This will focus on the following
- - How to Format a CodeFactory command
+This will focus on the following:
+ - How to format a CodeFactory command
  - How to consume data from the CodeFactory Framework
  - How to create a user interface and display data from CodeFactory
 
@@ -39,6 +39,6 @@ This will focus on the following
 
 
 ## Guidance
-Once you have completed this set of lessions you can return to gudiance by clicking the link below.
+Once you have completed this set of lessons you can return to guidance by clicking the link below:
 
 [CodeFactory Guidance](../Overview.md)
