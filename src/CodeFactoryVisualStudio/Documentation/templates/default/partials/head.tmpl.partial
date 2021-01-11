@@ -17,6 +17,4 @@
   {{#_noindex}}<meta name="searchOption" content="noindex">{{/_noindex}}
   {{#_enableSearch}}<meta property="docfx:rel" content="{{_rel}}">{{/_enableSearch}}
   {{#_enableNewTab}}<meta property="docfx:newtab" content="true">{{/_enableNewTab}}
-  <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101295999);</script>
-  <script async src="//static.getclicky.com/js"></script>
 </head>
