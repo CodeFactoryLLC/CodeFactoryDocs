@@ -2,6 +2,6 @@
 - name: Guidance
   href: guidance/
   homepage: guidance/intro.md
-- name: API Documentation
+- name: SDK Documentation
   href: obj/api/
   homepage: api/index.md

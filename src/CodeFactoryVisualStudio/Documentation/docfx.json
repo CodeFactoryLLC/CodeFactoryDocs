@@ -1,20 +1,26 @@
 {
   "metadata": [
     {
+
+      "dest": "obj/api",
+      "shouldSkipMarkup": false,
+      "force": true, 
       "src": [
         {
           "files": [
-            "*.csproj"
+            "CodeFactory/CodeFactory.csproj",
+            "CodeFactory.DotNet/CodeFactory.DotNet.csproj",
+            "CodeFactory.Logging/CodeFactory.Logging.csproj",
+            "CodeFactory.VisualStudio/CodeFactory.VisualStudio.csproj"
           ],
-          "cwd": ".",
+          "src": "../",
           "exclude": [
             "**/obj/**",
             "**/bin/**",
             "_site/**"
           ]
         }
-      ],
-      "dest": "obj/api"
+      ]
     }
   ],
   "build": {
@@ -62,8 +68,14 @@
         ]
       }
     ],
+    "xrefService": [
+      "https://xref.docs.microsoft.com/query?uid={uid}"
+    ],
     "dest": "../../../docs",
+    "markdownEngineName": "markdig",
     "globalMetadata": {
+      "_appTitle": "CodeFactory Guidance",
+      "_appFooter": "<span>Copyright 2021 &copy; CodeFactory, LLC.</span>",
       "_enableSearch": "true"
     },
     "postProcessors": [ "ExtractSearchIndex" ],

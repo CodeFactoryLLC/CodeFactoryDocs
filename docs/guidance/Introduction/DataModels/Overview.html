@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CodeFactory Data Models </title>
+    <title>CodeFactory Data Models | CodeFactory Guidance </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CodeFactory Data Models ">
+    <meta name="title" content="CodeFactory Data Models | CodeFactory Guidance ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -79,10 +79,10 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="codefactory-data-models">CodeFactory Data Models</h1>
 
-<p>The primary strength of CodeFactory is its ability to generate real time data models directly from your project/solution artifacts within the Visual Studio IDE. 
+<p>The primary strength of CodeFactory is its ability to generate real time data models directly from your project/solution artifacts within the Visual Studio IDE.
 This ability makes it possible to do design-time automation when delivering software. In this section we will provide a brief overview of the data models that are generated dynamically by the CodeFactory platform. These data models are used throughout the automation process.</p>
 <h2 id="data-models">Data Models</h2>
-<p>All data models are &quot;plain old CLR objects&quot; or POCO&#39;s for short. Each data model is implemented as an immutable data class. This approach is used since a change to the underlying data model requires a complete regeneration of the data model from the Visual Studio environment to make sure you have the latest version of all data.  For example, making a change to a C# class object would force CodeFactory to regenerate a data model of that file/class object.</p>
+<p>All data models are &quot;plain old CLR objects&quot; or POCO's for short. Each data model is implemented as an immutable data class. This approach is used since a change to the underlying data model requires a complete regeneration of the data model from the Visual Studio environment to make sure you have the latest version of all data.  For example, making a change to a C# class object would force CodeFactory to regenerate a data model of that file/class object.</p>
 <p>Data model generation is either triggered during the execution of a new automation process, or from various CodeFactory API calls that will request new copies of data models.</p>
 <h2 id="solution-explorer-models-project-system">Solution Explorer Models (Project System)</h2>
 <p>The following models are directly generated off the legacy and new project systems that are hosted by Visual Studio.
@@ -98,14 +98,14 @@ The overview of each data model is designed to provide an overview of capabiltie
 <h3 id="project-folder">Project Folder</h3>
 <p>Project folder model represents a folder under a target project. This will contain the path and name of the folder and the list of child objects which are managed under this project folder.</p>
 <h3 id="document">Document</h3>
-<p>Document model represents a file which is hosted within a project, project folder, or solution folder. This will contain the path and the name of the file, as well as access to the full contents of the document itself. </p>
+<p>Document model represents a file which is hosted within a project, project folder, or solution folder. This will contain the path and the name of the file, as well as access to the full contents of the document itself.</p>
 <h3 id="c-source-document">C# Source Document</h3>
-<p>C# Source Document provides project system access, as well as full access to the C# source code which is hosted within the document itself. </p>
+<p>C# Source Document provides project system access, as well as full access to the C# source code which is hosted within the document itself.</p>
 <h2 id="c-language-models---source-code">C# Language Models - (Source Code)</h2>
-<p>CodeFactory has access to the C# language compiler and can dynamically generate data models that represent the C#-based source code. 
-CodeFactory provides direct access all the way down to member and type level data. 
-In addition, CodeFactory will provide direct access to the raw source code at the target object level. 
-The following data models are auto-generated whenever accessing  source code files or directly referenced assemblies. 
+<p>CodeFactory has access to the C# language compiler and can dynamically generate data models that represent the C#-based source code.
+CodeFactory provides direct access all the way down to member and type level data.
+In addition, CodeFactory will provide direct access to the raw source code at the target object level.
+The following data models are auto-generated whenever accessing  source code files or directly referenced assemblies.
 The overview of each data model is designed to provide an example of capabilties and does not list every single data element or function. Please see our help docs for the full description of each data model.</p>
 <h3 id="source-code">Source Code</h3>
 <p>The Source Code model provides access to all elements that were compiled from the source code document. This includes the following:</p>
@@ -123,7 +123,7 @@ The overview of each data model is designed to provide an example of capabilties
 <li>Alias</li>
 </ul>
 <h3 id="namespace-statement">Namespace Statement</h3>
-<p>Namespace model provides the target namespace that other C# code elements are contained in. </p>
+<p>Namespace model provides the target namespace that other C# code elements are contained in.</p>
 <h3 id="attribute">Attribute</h3>
 <p>Attribute provides a data model of the type of attribute and parameters which have been assigned to the attribute. This includes the following:</p>
 <ul>
@@ -236,7 +236,7 @@ The overview of each data model is designed to provide an example of capabilties
 <li>Default value</li>
 </ul>
 <h3 id="type">Type</h3>
-<p> The Type data model provides information about a type that is used in all the above source code definitions. This will include the following:</p>
+<p>The Type data model provides information about a type that is used in all the above source code definitions. This will include the following:</p>
 <ul>
 <li>Name</li>
 <li>Namespace</li>
@@ -279,8 +279,8 @@ The overview of each data model is designed to provide an example of capabilties
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <span>Copyright 2021 &copy; CodeFactory, LLC.</span>
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>

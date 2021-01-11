@@ -8,7 +8,7 @@ This will provide background information about CodeFactory itself. In addition, 
 
 [CodeFactory Guidance](guidance/intro.md)
 
-## API Documentation
-The API documentation will provide you access to the SDK documentation that supports CodeFactory.
+## SDK Documentation
+The SDK documentation will provide you access to the API level documentation that supports CodeFactory.
 
-[API Documentation](api/index.md)
+[SDK Documentation](api/index.md)

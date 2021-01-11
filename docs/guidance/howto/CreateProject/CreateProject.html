@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Creating a Project </title>
+    <title>Creating a Project | CodeFactory Guidance </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Creating a Project ">
+    <meta name="title" content="Creating a Project | CodeFactory Guidance ">
     <meta name="generator" content="docfx 2.56.6.0">
     
     <link rel="shortcut icon" href="../../../favicon.ico">
@@ -81,31 +81,31 @@
 
 <p>The first step will be to create a project and register our first command.</p>
 <h2 id="background">Background</h2>
-<p>The following is important background information on CodeFatory itself. 
+<p>The following is important background information on CodeFatory itself.
 This will help you understand the default startup behavior the first time you create a CodeFactory project.</p>
 <h3 id="nuget">Nuget</h3>
-<p>CodeFactory was designed to load the target versions of the SDK libraries directly from Nuget. 
+<p>CodeFactory was designed to load the target versions of the SDK libraries directly from Nuget.
 The way that this is accomplished is by adding direct project references to the target version hosted on nuget.
-With the legacy project system used to host .Net framework it does not automatically pull down these nuget packages when you load the project for the first time. 
-So if any CodeFactory project items are added you will get a number of errors related to the libraries not being loaded. 
+With the legacy project system used to host .Net framework it does not automatically pull down these nuget packages when you load the project for the first time.
+So if any CodeFactory project items are added you will get a number of errors related to the libraries not being loaded.
 The Nuget packages will automatically be pulled down the first time you do a build of the project itself, these errors will then go away.</p>
 <h3 id="codefactory-packager">CodeFactory Packager</h3>
-<p>A CodeFactory commands project is the main execution point for all CodeFactory automation. 
+<p>A CodeFactory commands project is the main execution point for all CodeFactory automation.
 This project will automatically execute a command line utility after the compile of the project has completed.
-The CFXPackager utility is responsible for building the CFX file that is used to run codefactory automation. </p>
-<p>If no commands are defined in the project this utiltity will output a error saying the package could not be built. 
-This error will go away once the first command is added to the project. </p>
+The CFXPackager utility is responsible for building the CFX file that is used to run codefactory automation.</p>
+<p>If no commands are defined in the project this utiltity will output a error saying the package could not be built.
+This error will go away once the first command is added to the project.</p>
 <h2 id="walk-through-steps">Walk through Steps</h2>
 <p>The following is the walk through for creating the project and make sure you can successfully compile the code factory project.</p>
 <ol>
 <li>Start Visual Studio 2019</li>
 </ol>
 <hr>
-<ol>
+<ol start="2">
 <li>From the What would you like to do? window click Create a new project
 <img src="Images/StartWindowCreateProject.png" alt=""></li>
 </ol>
-<p>Or you can start the same process if you dont use the start up window. </p>
+<p>Or you can start the same process if you dont use the start up window.</p>
 <ul>
 <li>Click the File menu</li>
 <li>From the context menu select New</li>
@@ -113,7 +113,7 @@ This error will go away once the first command is added to the project. </p>
 </ul>
 <p><img src="Images/FileNewProject.png" alt=""></p>
 <hr>
-<ol>
+<ol start="3">
 <li>From the Create a new project window do the following</li>
 </ol>
 <p><img src="Images/SelectCommandLibraryProject.png" alt=""></p>
@@ -123,7 +123,7 @@ This error will go away once the first command is added to the project. </p>
 <li>Click Next</li>
 </ul>
 <hr>
-<ol>
+<ol start="4">
 <li>From the Configure you new project do the following</li>
 </ol>
 <p><img src="Images/ConfigureProject.png" alt=""></p>
@@ -132,22 +132,22 @@ This error will go away once the first command is added to the project. </p>
 <li>Click Create</li>
 </ul>
 <hr>
-<ol>
-<li>Once the solution and project has been created you will see the project and default folder structure. I have expanded the Project folder to show you the sub folders. </li>
+<ol start="5">
+<li>Once the solution and project has been created you will see the project and default folder structure. I have expanded the Project folder to show you the sub folders.</li>
 </ol>
-<p>The following is a brief overview of the goal for each folder. 
-Important note each explorer command has its own folder. 
-The following structure is prescriptive only. 
+<p>The following is a brief overview of the goal for each folder.
+Important note each explorer command has its own folder.
+The following structure is prescriptive only.
 You can create any folder structure you wish for your automation.</p>
 <p><img src="Images/ProjectFolderStructure.png" alt=""></p>
 <ul>
 <li>The Project folder is where project commands are created and stored</li>
 <li>The Dialog folder is for placement of user interface dialogs you created.</li>
 <li>The Logic folder is where you add logic that can be reused across multiple project commands</li>
-<li>The Template folder is where you add T4 template that as used by project commands. </li>
+<li>The Template folder is where you add T4 template that as used by project commands.</li>
 </ul>
 <hr>
-<ol>
+<ol start="6">
 <li>Next we will add a solution explorer project command to the project. Do the following steps.</li>
 </ol>
 <p><img src="Images/SolutionExplorerProjectNewItemAdd.png" alt=""></p>
@@ -157,7 +157,7 @@ You can create any folder structure you wish for your automation.</p>
 <li>From the sub context menu select New Item...</li>
 </ul>
 <hr>
-<ol>
+<ol start="7">
 <li>From the Add New Item Dialog Window do the following.</li>
 </ol>
 <p><img src="Images/AddProjectCommandDialog.png" alt=""></p>
@@ -168,19 +168,19 @@ You can create any folder structure you wish for your automation.</p>
 <li>Then click Add</li>
 </ul>
 <hr>
-<ol>
-<li>A Microsoft Visual Studio error box will appear. </li>
+<ol start="8">
+<li>A Microsoft Visual Studio error box will appear.</li>
 </ol>
 <p><img src="Images/VisualStudioErrorDialogCodeFactory.png" alt=""></p>
-<p>This error occurs because the CodeFactory SDK nuget packages have not been downloaded into the project yet. 
+<p>This error occurs because the CodeFactory SDK nuget packages have not been downloaded into the project yet.
 Click Ok to continue.</p>
 <hr>
-<ol>
+<ol start="9">
 <li>The command code file will display in the IDE and a number of syntax errors will appear. This is occuring since we have not pulled down the SDK through nuget yet.</li>
 </ol>
 <p><img src="Images/CodeFactoryReferenceMissingError.png" alt=""></p>
 <hr>
-<ol>
+<ol start="10">
 <li>We will then build the solution this will trigger the pull of the nuget packages. Do the following.</li>
 </ol>
 <p><img src="Images/BuildSolution.png" alt=""></p>
@@ -189,17 +189,17 @@ Click Ok to continue.</p>
 <li>From the context menu click Build Solution</li>
 </ul>
 <hr>
-<ol>
-<li>Once the build has completed it will have downloaded and installed the nuget packages into the project. </li>
+<ol start="11">
+<li>Once the build has completed it will have downloaded and installed the nuget packages into the project.</li>
 </ol>
-<p>You will now see the CodeFactorySDK reference in the project. </p>
+<p>You will now see the CodeFactorySDK reference in the project.</p>
 <p><img src="Images/CodeFactorySDKProjectReference.png" alt=""></p>
 <p>You will also notice there are no longer any errors in the project command.</p>
 <p><img src="Images/ProjectCommandNoErrors.png" alt=""></p>
-<p>The project creation is complete. </p>
+<p>The project creation is complete.</p>
 <hr>
 <h2 id="next-step---automating-project-information">Next Step - Automating Project Information</h2>
-<p>In the next section we will build the logic to read information about a project and display it to the user in Visual Studio. </p>
+<p>In the next section we will build the logic to read information about a project and display it to the user in Visual Studio.</p>
 <p><a href="AutomateProjectInformation.html">Automate Project Information</a></p>
 <h2 id="return-to-create-project-guidance">Return To Create Project Guidance</h2>
 <p>The link below will take you back to the create project guidance.</p>
@@ -232,8 +232,8 @@ Click Ok to continue.</p>
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
+            <span>Copyright 2021 &copy; CodeFactory, LLC.</span>
             
-            <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
       </footer>
