@@ -80,7 +80,7 @@
     },
     "postProcessors": [ "ExtractSearchIndex" ],
     "template": [
-      "default"
+      "default","templates/default"
     ]
   }
 }
